@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/xxxsmall_margin">
+
+    <ImageButton
+        android:id="@+id/ib_ws_circle"
+        android:layout_width="@dimen/ws_circle_size"
+        android:layout_height="@dimen/ws_circle_size"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingRight="@dimen/small_margin"
+        android:background="@drawable/button_round"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_ws_icon"
+        android:layout_width="@dimen/ws_circle_size"
+        android:layout_height="@dimen/ws_circle_size"
+        android:padding="@dimen/small_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_ws_icon"
+        android:layout_width="@dimen/ws_circle_size"
+        android:layout_height="@dimen/ws_circle_size"
+        android:padding="@dimen/small_margin"
+        android:gravity="center"
+        android:textSize="@dimen/big_text_size"
+        android:textColor="@color/white_unselected_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/tv_ws_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Service"
+        android:textSize="@dimen/button_text_size"
+        android:layout_below="@id/ib_ws_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xxsmall_margin"
+        android:paddingBottom="@dimen/large_margin"
+        android:gravity="center_horizontal"/>
+</RelativeLayout>

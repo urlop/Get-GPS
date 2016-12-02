@@ -1,0 +1,108 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_horizontal_margin_half">12dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- SlidingTabs default height-->
+    <dimen name="sliding_tab_height">65dp</dimen>
+
+    <dimen name="cardview_height">275dp</dimen>
+    <dimen name="cardview_message_height">180dp</dimen>
+
+    <dimen name="trip_tab_map_height">165dp</dimen>
+    <dimen name="tab_text_size">11.3sp</dimen>
+    <dimen name="neg_xxxsmall_margin">-5dp</dimen>
+    <dimen name="xxxsmall_margin">3dp</dimen>
+    <dimen name="xxsmall_margin">5dp</dimen>
+    <dimen name="xsmall_margin">8dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="medium_margin">15dp</dimen>
+    <dimen name="xmedium_margin">18dp</dimen>
+    <dimen name="large_margin">20dp</dimen>
+    <dimen name="xlarge_margin">25dp</dimen>
+    <dimen name="xxlarge_margin">30dp</dimen>
+    <dimen name="sign_in_large_padding">36dp</dimen>
+    <dimen name="sign_up_large_padding">31dp</dimen>
+    <dimen name="xxxlarge_margin">37dp</dimen>
+    <dimen name="sign_up_header_text_size">20sp</dimen>
+    <dimen name="button_margin_top_sign_in">48dp</dimen>
+    <dimen name="splash_title_text_size">24sp</dimen>
+    <dimen name="splash_message_text_size">22sp</dimen>
+    <dimen name="cv_big_text_size">26sp</dimen>
+    <dimen name="big_text_size">37sp</dimen>
+
+    <dimen name="fab_top_down_padding">4dp</dimen>
+    <dimen name="fab_left_right_padding">10dp</dimen>
+    <dimen name="fab_radius">8dp</dimen>
+    <!-- cardview all-->
+    <dimen name="cv_all_height">170dp</dimen>
+    <dimen name="cv_text_size">18sp</dimen>
+    <dimen name="cv_all_address_width">163dp</dimen>
+    <dimen name="cv_all_space_top">18dp</dimen>
+    <!-- cardview new Trip-->
+    <dimen name="cv_new_trip_text_size">34sp</dimen>
+    <dimen name="cv_new_trip_text_size_mi">25sp</dimen>
+    <dimen name="button_background_radius">26dp</dimen>
+    <dimen name="button_classify_radius">3dp</dimen>
+    <dimen name="medium_text_size">15sp</dimen>
+
+    <!--content edit trip -->
+    <dimen name="margin_miles_deduction">58dp</dimen>
+
+
+    <dimen name="line_separator_height">1dp</dimen>
+    <dimen name="xline_separator_height">2dp</dimen>
+
+    <!-- Styles  -->
+    <dimen name="rounded_button_min_width">88dp</dimen>
+    <dimen name="rounded_button_min_height">36dp</dimen>
+    <dimen name="rounded_button_margin">10dp</dimen>
+
+    <dimen name="classify_button_min_width">110dp</dimen>
+    <dimen name="classify_button_min_height">34dp</dimen>
+
+    <dimen name="pupose_trip_button_min_width">77dp</dimen>
+    <dimen name="pupose_trip_button_min_height">31dp</dimen>
+
+    <dimen name="square_button_min_width">120dp</dimen>
+    <dimen name="square_button_min_height">46dp</dimen>
+
+    <dimen name="square_button_min_width_forgot_password">213dp</dimen>
+
+    <dimen name="xsmall_textsize">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_text_size">11sp</dimen>
+
+    <dimen name="et_miles_height">100dp</dimen>
+    <dimen name="et_miles_text_size">45sp</dimen>
+    <dimen name="pie_chart_legent_width">100dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+
+    <dimen name="et_padding_bottom">7dp</dimen>
+
+    <dimen name="terms_of_use_padding">2dp</dimen>
+
+    <dimen name="progress_bar_height">25dp</dimen>
+
+    <!--home-->
+    <dimen name="graphic_height">225dp</dimen>
+
+    <!--work sources-->
+    <dimen name="ws_circle_size">79dp</dimen>
+
+    <!--Edit Profile-->
+    <dimen name="line_separator">1dp</dimen>
+    <dimen name="edit_profile_text_size">16sp</dimen>
+
+    <!-- Splash Fragment-->
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_circle_indicator_extra_spacing">8dp</dimen>
+
+    <!-- Reset Password Green Icon Size-->
+    <dimen name="circle_green_icon">46dp</dimen>
+
+    <!-- Settings margin-->
+    <dimen name="margin_bottom_separator">12dp</dimen>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_container"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minWidth="@dimen/cardview_height"
+    android:layout_height="match_parent"
+    android:padding="@dimen/large_margin">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/prompt_name"
+            android:imeActionId="@+id/add"
+            android:imeActionLabel="@string/action_add_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textAutoCorrect"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:maxLength="25"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_ws_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/dialog_add"
+        android:textColor="@color/colorPrimaryEv"
+        style="?attr/borderlessButtonStyle"/>
+</LinearLayout>

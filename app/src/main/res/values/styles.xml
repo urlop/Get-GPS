@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="ToolbarColoredBackArrow" parent="EverlanceTheme">
+        <item name="android:textColorSecondary">@color/colorPrimaryEv</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryEv</item>
+    </style>
+
+    <style name="rounded_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minWidth">@dimen/rounded_button_min_width</item>
+        <item name="android:minHeight">@dimen/rounded_button_min_height</item>
+        <item name="android:layout_margin">@dimen/rounded_button_margin</item>
+        <item name="android:background">@drawable/button_round_background</item>
+    </style>
+
+    <style name="classify_button">
+        <item name="android:minWidth">@dimen/classify_button_min_width</item>
+        <item name="android:minHeight">@dimen/classify_button_min_height</item>
+        <item name="android:textSize">@dimen/xsmall_textsize</item>
+        <item name="theme">@style/grey_button</item>
+    </style>
+
+    <style name="square_green_border_empty_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minWidth">@dimen/square_button_min_width</item>
+        <item name="android:minHeight">@dimen/square_button_min_height</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:background">@drawable/button_square_green_borders</item>
+    </style>
+
+    <style name="square_white_border_empty_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minWidth">@dimen/square_button_min_width</item>
+        <item name="android:minHeight">@dimen/square_button_min_height</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:background">@drawable/button_square_white_borders</item>
+    </style>
+
+    <style name="square_fill_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minWidth">@dimen/square_button_min_width</item>
+        <item name="android:minHeight">@dimen/square_button_min_height</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:background">@color/colorPrimaryEv</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="work_on_swipe">
+        <item name="android:layout_margin">@dimen/xxsmall_margin</item>
+        <item name="android:background">@color/color_red</item>
+    </style>
+
+    <style name="EverlanceTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EverlanceTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="EverlanceTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

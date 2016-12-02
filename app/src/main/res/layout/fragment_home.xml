@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:text="@string/home_tab_tv_trips"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_weight="2.5"
+                android:gravity="start"
+                android:text="@string/home_tab_tv_auto_detection"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switch_automatic_detection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="@string/home_tab_tv_auto_classify"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingBottom="@dimen/large_margin"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/bt_classify_personal"
+                    style="@style/classify_button"
+                    android:background="@drawable/button_classify_personal_background_pressed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_personal"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="@dimen/small_margin"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/bt_classify_off"
+                    style="@style/classify_button"
+                    android:background="@drawable/button_off_background_pressed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_off"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="@dimen/small_margin"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/bt_classify_work"
+                    style="@style/classify_button"
+                    android:background="@drawable/button_classify_work_background_pressed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_work"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xline_separator_height"
+            android:background="@color/grey_transparent" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:text="@string/str_mileage"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/graphic_height"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/large_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_work_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0mi"
+                    android:textSize="@dimen/cv_text_size"
+                    android:textColor="@color/pie_chart_green" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_legent_width"
+                    android:layout_height="@dimen/xline_separator_height"
+                    android:background="@color/pie_chart_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_work"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pie_chart_green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/large_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_charity_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="0mi"
+                    android:textSize="@dimen/cv_text_size"
+                    android:textColor="@color/pie_chart_orange" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_legent_width"
+                    android:layout_height="@dimen/xline_separator_height"
+                    android:background="@color/pie_chart_orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/str_charity_slash"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pie_chart_orange"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/str_medical"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pie_chart_orange"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/large_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_unclassified_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="0mi"
+                    android:textSize="@dimen/cv_text_size"
+                    android:textColor="@color/pie_chart_grey" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_legent_width"
+                    android:layout_height="@dimen/xline_separator_height"
+                    android:background="@color/pie_chart_grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/str_unclassified"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pie_chart_grey"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginStart="@dimen/large_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_personal_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0mi"
+                    android:textSize="@dimen/cv_text_size"
+                    android:textColor="@color/pie_chart_blue" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_legent_width"
+                    android:layout_height="@dimen/xline_separator_height"
+                    android:background="@color/pie_chart_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_personal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pie_chart_blue"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/xxlarge_margin"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fab_size_normal" />
+    </LinearLayout>
+</ScrollView>

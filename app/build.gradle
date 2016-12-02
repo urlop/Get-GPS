@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.example.ruby.getgps"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled  true
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix '.debug'
+
+            buildConfigField 'String', 'BASE_API_URL', '"https://api.everlance.com"'
+            buildConfigField 'boolean', 'CRASHLYTICS_DISABLED', 'true'
+            buildConfigField 'boolean', 'MUST_GET_MOTION_TO_STOP', 'true'
+            resValue 'string', 'GOOGLE_MAP_KEY', 'AIzaSyA5cZiSOguJt0PtXepL-H6FARHnzLWZJXA'
+            resValue 'string', 'app_name', 'GetGPS'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled false // TODO: set to true when proguard is configured
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField 'String', 'BASE_API_URL', '"https://api.everlance.com"'
+            buildConfigField 'boolean', 'CRASHLYTICS_DISABLED', 'false'
+            buildConfigField 'boolean', 'MUST_GET_MOTION_TO_STOP', 'true'
+            resValue 'string', 'GOOGLE_MAP_KEY', 'AIzaSyBDJs5T7oq6deoAi-48iEtpr-IXSrQRELY'
+            resValue 'string', 'app_name', 'GetGPS'
+            ext.betaDistributionReleaseNotes = 'CircleCI release build.'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.google.android.gms:play-services:9.8.0'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    /*compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }*/
+    compile 'com.jakewharton.timber:timber:4.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    //compile 'com.squareup.retrofit2:converter-jackson:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.okhttp:logging-interceptor:2.6.0'
+
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+
+    //compile 'com.facebook.stetho:stetho:1.3.1'
+    //compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+}

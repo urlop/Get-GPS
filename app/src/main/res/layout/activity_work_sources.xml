@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ruby.getgps.ui.activities.WorkSourcesActivity"
+    android:background="@android:color/white">
+
+    <ProgressBar
+        android:id="@+id/v_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="gone" />
+
+    <include layout="@layout/content_work_sources" />
+
+    <LinearLayout
+        style="@style/square_fill_button"
+        android:layout_width="@dimen/square_button_min_width"
+        android:layout_height="@dimen/square_button_min_height"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/action_next"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_check_white"/>
+
+</android.support.design.widget.CoordinatorLayout>

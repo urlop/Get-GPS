@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/cardview_height"
+    android:orientation="vertical"
+    android:padding="@dimen/large_margin">
+
+    <TextView
+        android:id="@+id/tv_gallery_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:text="@string/choose_from_gallery" />
+
+    <TextView
+        android:id="@+id/tv_take_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:text="@string/take_a_picture" />
+
+    <TextView
+        android:id="@+id/tv_last_pic_taken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_photo" />
+
+</LinearLayout>

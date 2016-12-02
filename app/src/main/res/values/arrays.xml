@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="work_sources_icons">
+        <item>@drawable/ic_favorite_white</item>
+        <item>@drawable/ic_work_white</item>
+        <item>@drawable/ic_check_white</item>
+        <item>@drawable/ic_favorite_white</item>
+        <item>@drawable/ic_work_white</item>
+        <item>@drawable/ic_help_white</item>
+        <item>@drawable/ic_favorite_white</item>
+        <item>@drawable/ic_work_white</item>
+        <item>@drawable/ic_check_white</item>
+        <item>@drawable/ic_favorite_white</item>
+    </array>
+
+    <string-array name="work_sources_names">
+        <item>Sales</item>
+        <item>Real Estate</item>
+        <item>Uber</item>
+        <item>TaskRabbit</item>
+        <item>Food Services</item>
+        <item>Taxi</item>
+        <item>Handy</item>
+        <item>Coaching</item>
+        <item>Lyft</item>
+        <item>Postmates</item>
+    </string-array>
+
+    <string-array name="work_sources_colors">
+        <item>#05cded</item>
+        <item>#00954a</item>
+        <item>#000000</item>
+        <item>#00954a</item>
+        <item>#db2573</item>
+        <item>#05cded</item>
+        <item>#00954a</item>
+        <item>#000000</item>
+        <item>#00954a</item>
+        <item>#db2573</item>
+    </string-array>
+</resources>
